@@ -35,6 +35,11 @@ col_history, col_main = st.columns([1, 3])
 # 左側エリア：これまでの勝負結果＆山札の残り枚数
 # ============================================
 with col_history:
+    st.write("◆◇ルール説明◇◆")
+    st.write("山札には✊✌✋がそれぞれ5枚ずつ入っています。")
+    st.write("手札はランダムに配られ、1戦毎に1枚山札から引きます。")
+    st.write("勝負は3回勝負。同点の場合は山札がなくなるまでサドンデス⚔")
+    st.write("---")
     st.subheader("試合結果📝")
     st.write(f"**山札の残り:** あと {len(st.session_state.deck)}枚")
     st.write("---")
